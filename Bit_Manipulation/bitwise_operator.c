@@ -25,6 +25,5 @@ int main() {
 	} else {
 		printf("%d bit is not set\n",pos);
 	}	
-
 	return 0;
 }
