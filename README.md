@@ -1,6 +1,6 @@
 Interview Prepration content is stored in this repository
 
-Day 1:\n
+Day 1:<br />
 	1. Bubble Sort
 	2. Insertion Sort
 	3. Selection Sort
