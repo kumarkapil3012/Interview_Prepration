@@ -1,19 +1,17 @@
 .PHONY=all clean
 
-CC=gcc
+all:
+	make -C Compilation_Process
+	make -C Bit_Manipulation
+	make -C Arrays_Pointers
+	make -C Storage_classes
+	make -C C
 
-SRCS:=$(wildcard *.c)
-BINS:=$(SRCS:%.c=%)
-
-all:${BINS}
-
-%:%.o
-	${CC} -o $@ $<
-
-%.o:%.c
-	${CC} -c $<
-	
 clean:
-	rm -rf *.o ${BINS}
+	make -C Compilation_Process clean
+	make -C Bit_Manipulation clean
+	make -C Arrays_Pointers clean
+	make -C Storage_classes clean
+	make -C C clean
 
 
