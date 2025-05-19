@@ -1,0 +1,19 @@
+
+Comparison Factor:
+fork()	
+  Invoking	fork(), creates a child process of the invoking process.
+  Parent process and child process have unique IDs.
+  Parent and child processes start simultaneously.
+vfork()
+  vfork(), creates a child process that has shares some attributes with the parent.
+  Parent process and child process have the same ID.
+  Parent process is temporarily suspended while child process runs.
+exec()	
+  exec(), replaces the invoking process.
+  The process running and the process that replaces it , have the same PID.
+  Parent process is terminated and the new process starts at entry point.
+clone()
+	clone(), creates a child process and offers more control on data shared.
+  Parent process and child process have unique IDs but can share when specified.
+  Parent and child processes start simultaneously.
+		
