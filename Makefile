@@ -16,6 +16,6 @@ clean:
 	make -C Storage_classes clean
 	make -C OS_Concepts clean
 	make -C Sorting_Searching clean
-	make -C Strings
+	make -C Strings clean
 
 
