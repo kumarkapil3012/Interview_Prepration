@@ -8,6 +8,7 @@ all:
 	make -C OS_Concepts
 	make -C Sorting_Searching
 	make -C Strings
+	make -C DSA
 
 clean:
 	make -C Compilation_Process clean
@@ -17,5 +18,5 @@ clean:
 	make -C OS_Concepts clean
 	make -C Sorting_Searching clean
 	make -C Strings clean
-
+	make -C DSA clean
 
