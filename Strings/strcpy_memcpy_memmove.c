@@ -12,6 +12,19 @@ char *my_strcpy(char *dest, const char *src) {
 	return original_dest;
 }
 
+char *my_strncpy(char *dest, const char *src, int n) {
+	char *original_dest = dest;
+	int i = 0;
+	while (i < n && *src != '\0') {
+		*dest = *src;
+		dest++;
+		src++;
+		i++;
+	}
+	*dest = '\0';
+	return original_dest;
+}
+
 void *my_memcpy(void *dest, const void *src, size_t n) {
 	char *d = (char *)dest;
 	const char *s = (const char *)src;
@@ -44,6 +57,9 @@ int main() {
 	char dest[10];
 
 	printf("%s\n",(char*)my_strcpy(dest,src));
+	printf("%s\n",(char*)my_strncpy(dest,src, 3));
+	printf("%s\n",(char*)my_memcpy(dest,src, 3));
+	printf("%s\n",(char*)my_memmove(dest,src, 3));
 
 	return 0;
 }
